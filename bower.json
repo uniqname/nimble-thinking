@@ -1,0 +1,7 @@
+{
+  "name": "presentation-on-understanding-how-to-apply-nimble-agile-thinking-within-within-your-sphere",
+  "version": "0.0.1",
+  "dependencies": {
+    "reveal.js": "~2.6.1"
+  }
+}

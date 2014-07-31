@@ -1,0 +1,10 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Presentation on understanding how to apply nimble (Agile) thinking within within your sphere.",
+    "packageVersion": "0.0.1",
+    "useSass": true,
+    "deployToGithubPages": true,
+    "githubUsername": "uniqname",
+    "githubRepository": "nimble-thinking"
+  }
+}
