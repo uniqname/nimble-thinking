@@ -1,11 +1,11 @@
-##  Agility is
-<p class="fragment current-displayed">a coding pattern</p>
-<p class="fragment current-displayed">a development style</p>
-<p class="fragment current-displayed">a managment philosophy</p>
-<p class="fragment current-displayed">a product lifecycle technique</p>
-<p class="fragment current-displayed">a design approach</p>
+##  Agility is demonstrated in
+<p class="fragment current-displayed">coding patterns</p>
+<p class="fragment current-displayed">development styles</p>
+<p class="fragment current-displayed">managment philosophy</p>
+<p class="fragment current-displayed">product lifecycle</p>
+<p class="fragment current-displayed">design decisions</p>
 <div class="fragment current-displayed">
-  <p>a way of problem solving</p>
+  <p>problem solving</p>
 
   <blockquote>
     <p>When faced with two of more alternatives that deliver roughly the same value, take the path that makes future change easier.</p>
@@ -13,4 +13,4 @@
   </blockquote>
 
 </div>
-<p class="fragment current-displayed grow">a culture</p>
+<p class="fragment current-displayed grow">team culture</p>
