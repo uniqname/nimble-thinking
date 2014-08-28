@@ -2,4 +2,4 @@
 
 It would be a [fractal](http://dictionary.reference.com/browse/fractal)
 
-<img class="fragment" src="img/fractle.gif"/>
+<img class="fragment" src="img/repeat.gif"/>
