@@ -46,7 +46,8 @@ $mainColor: #ddd;
 
 // Background generator ------------------------
 @mixin bodyBackground() {
-        @include radial-gradient( rgba(28,30,32,1), rgba(85,90,95,1) );
+        // @include radial-gradient( rgba(28,30,32,1), rgba(85,90,95,1) );
+        background-color: #181d36;
 }
 // ---------------------------------------------
 
@@ -64,6 +65,10 @@ $mainColor: #ddd;
  * CUSTOM & OVERRIDES
  *********************************************/
  $color__strike: hsla(0, 40%, 40%, 1);
+
+ body {
+    @include bodyBackground();
+ }
 
  .reveal {
     color: #ccc;
@@ -118,6 +123,41 @@ $mainColor: #ddd;
       margin-bottom: .5em;
    }
 
+   .branded {
+    border-top: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    padding: .25em;
+   }
+
+   .logo {
+        width: 1em;
+        display: inline-block;
+        border: none;
+        background: none;
+        margin: 0 .25em -.15em 0;
+
+        &.lds {
+            width: 5em;
+        }
+   }
+
+   footer.branding {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: .5em;
+
+    .branded {
+        border-top: 0;
+        border-bottom: 0;
+    }
+   }
+
+   .presenter,
+   .legal {
+    text-align: center;
+   }
+
    .aside,
    [class*="principle"] {
       font-size: .8em;
@@ -145,8 +185,8 @@ $mainColor: #ddd;
       }
    }
 
-   .principle-1 {
-      background-color: hsla(200, 50%, 50%, 1);
+   figcaption {
+    margin: 1em 0;
    }
 
    .strike {
@@ -156,6 +196,10 @@ $mainColor: #ddd;
 
    .deminish {
       color: darken($mainColor, 20%);
+
+      a {
+        color: inherit;
+      }
    }
 
    span.fragment {
@@ -167,5 +211,26 @@ $mainColor: #ddd;
       &.current-fragment{
             display: inline-block;
       }
+   }
+   @media print {
+
+    section::after {
+      content: '';
+      position: absolute;
+      bottom: 1em;
+      left: 1em;
+      width: 5em;
+      height: 1em;
+      background: url(/img/print-footer-sm.png) no-repeat;
+      background-size: contain;
+    }
+
+    footer.branding {
+      display: none;
+    }
+
+    a::after {
+      content: "[" attr(href) "]";
+    }
    }
  }

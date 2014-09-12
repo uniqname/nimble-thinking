@@ -1,4 +1,5 @@
 [
+    "intro.html",
     "index.md",
     "roles-with-agility.md",
     "back-to-basics.md",
@@ -9,6 +10,6 @@
     "every-participant-matters.md",
     "product-owners.html",
     "project-managers.html",
-    "culture.html",
-    "designers.html"
+    "designers.html",
+    "end.html"
 ]

@@ -14,13 +14,7 @@
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #1c1e20;
-  background: -moz-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #555a5f), color-stop(100%, #1c1e20));
-  background: -webkit-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
-  background: -o-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
-  background: -ms-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
-  background: radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
+  background-color: #181d36;
   background-color: #2b2b2b; }
 
 .reveal {
@@ -149,6 +143,9 @@ body {
 /*********************************************
  * CUSTOM & OVERRIDES
  *********************************************/
+body {
+  background-color: #181d36; }
+
 .reveal {
   color: #ccc;
   line-height: 1.4; }
@@ -174,6 +171,29 @@ body {
   .reveal li {
     line-height: 1.2;
     margin-bottom: .5em; }
+  .reveal .branded {
+    border-top: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    padding: .25em; }
+  .reveal .logo {
+    width: 1em;
+    display: inline-block;
+    border: none;
+    background: none;
+    margin: 0 .25em -.15em 0; }
+    .reveal .logo.lds {
+      width: 5em; }
+  .reveal footer.branding {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: .5em; }
+    .reveal footer.branding .branded {
+      border-top: 0;
+      border-bottom: 0; }
+  .reveal .presenter,
+  .reveal .legal {
+    text-align: center; }
   .reveal .aside,
   .reveal [class*="principle"] {
     font-size: .8em;
@@ -197,16 +217,32 @@ body {
     .reveal [class*="principle"] p {
       line-height: 1;
       text-align: left; }
-  .reveal .principle-1 {
-    background-color: #4095bf; }
+  .reveal figcaption {
+    margin: 1em 0; }
   .reveal .strike {
     text-decoration: line-through;
     color: #8f3d3d; }
   .reveal .deminish {
     color: #aaaaaa; }
+    .reveal .deminish a {
+      color: inherit; }
   .reveal span.fragment {
     display: inline-block; }
   .reveal .current-displayed.current-displayed {
     display: none; }
     .reveal .current-displayed.current-displayed.current-fragment {
       display: inline-block; }
+  @media print {
+    .reveal section::after {
+      content: '';
+      position: absolute;
+      bottom: 1em;
+      left: 1em;
+      width: 5em;
+      height: 1em;
+      background: url(/img/print-footer-sm.png) no-repeat;
+      background-size: contain; }
+    .reveal footer.branding {
+      display: none; }
+    .reveal a::after {
+      content: "[" attr(href) "]"; } }
