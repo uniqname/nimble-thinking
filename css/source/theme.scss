@@ -206,12 +206,41 @@ $mainColor: #ddd;
       display: inline-block;
    }
 
-   .current-displayed.current-displayed {
-      display: none;
-      &.current-fragment{
+    .current-displayed.current-displayed {
+        display: none;
+        &.current-fragment{
             display: inline-block;
-      }
-   }
+        }
+    }
+
+    .plain {
+        border: none;
+        background: none;
+        box-shadow: none;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .preamble {
+        text-align: center;
+    }
+
+    .current-strike.current-fragment {
+        text-decoration: line-through;
+        color: hsl(0, 59%, 41%);
+    }
+
+    .past-invisible.past-invisible.past-invisible.visible {
+        opacity: 0;
+    }
+
+    // .current-fragment ~ .past-invisible.past-invisible,
+    // .current-fragment.past-invisible.past-invisible.past-invisible,
+    .past-invisible.past-invisible.past-invisible:not(.visible),
+    .past-invisible.past-invisible.past-invisible.current-fragment {
+        opacity: 1;
+    }
    @media print {
 
     section::after {

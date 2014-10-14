@@ -1,5 +1,12 @@
 [
     "intro.html",
+    "about-me.html",
+    "title.html",
+    "why-me.html",
+    "what-im-not.html",
+    "what-i-am.html",
+    "ngm.html",
+    "a-practicle-guide.html",
     "index.md",
     "roles-with-agility.md",
     "back-to-basics.md",
@@ -11,5 +18,6 @@
     "product-owners.html",
     "project-managers.html",
     "designers.html",
+    "ase.html",
     "end.html"
 ]

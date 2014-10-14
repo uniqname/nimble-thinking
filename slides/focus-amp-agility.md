@@ -1,3 +1,5 @@
+<p class="preamble">TL;DR;</p>
+
 ##  Focus &amp; agility
 
 <p class="fragment">No product, no matter how much agility is exhibited, can be successful without a clear long-term vision for that product.</p>
